@@ -1,0 +1,321 @@
+body {
+    background-color: #ffecdf;
+    margin: initial;
+    font-family: 'Josefin Slab', serif;
+}
+
+.navigation {
+    color: #b48257;
+    height: 45px;
+
+    animation-name: navigation-bar;
+    animation-duration: 3s;
+}
+
+.navigation ul {
+    list-style: none;
+    margin-top: initial;
+    padding: initial;
+    text-align: right;
+    height: 45px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 45px;
+    font-size: 18px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #b48257;
+}
+
+.navigation a:hover {
+    color: #1b0706;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+#nav-toggle:hover {
+    color: #1b0706;
+    cursor: pointer;
+}
+
+.cover-page {
+    color: #b48257;
+    display: flex;
+}
+
+.cover-page span {
+    color: #1b0706;
+    display: block;
+}
+
+.cover-page div {
+    display: inline-block;
+    height: 650px;
+}
+
+.main-picture {
+    width: 40%;
+    text-align: center;
+
+    animation-name: profile-picture;
+    animation-duration: 2s;
+}
+
+.main-picture img {
+    width: 320px;
+    border-radius: 320px;
+    margin-top: 100px;
+}
+
+.main-title {
+    vertical-align: top;
+    width: 60%;
+
+    animation-name: title;
+    animation-duration: 2s;
+}
+
+.main-title h1 {
+    margin-top: 200px;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.main-title h2 {
+    margin-top: -20px;
+    font-size: 18px;
+    text-indent: 0.2em;
+}
+
+.main {
+    padding: 60px 120px;
+
+    animation-name: contents;
+    animation-duration: 4s;
+}
+
+.main h1 {
+    color: #b48257;
+}
+
+.main h2 {
+    color: #b48257;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-top: 40px;
+}
+
+.main h3 {
+    color: #1b0706;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.main p {
+    color: #b48257;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.main a{
+    color: #794E30;
+}
+
+.main hr {
+    border: 1px solid #b48257;
+}
+
+.shortcut {
+    list-style: none;
+    padding: initial;
+    color: #C7835E;
+}
+
+.shortcut li {
+    display: inline-block;
+}
+
+.shortcut a {
+    color: #C7835E;
+}
+
+.icon-fa {
+    font-size: 32px;
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.return {
+    display: block;
+    padding-top: 20px;
+}
+
+.return a {
+    text-decoration: none;
+}
+
+.work-picture {
+    width: 320px;
+    height: 320px;
+    display: inline-block; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+}
+
+.work-link {
+    text-decoration: none;
+}
+
+.div-effect {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    transition: 2s;
+}
+
+.div-effect:hover {
+    opacity: 0.80;
+    transition: 2s;
+}
+
+.div-effect-text {
+    text-align: center;
+    padding-top: 131px;
+    line-height: 1.6;
+}
+
+.div-effect-text h1 {
+    font-size: 16px;
+    color: #b48257;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: initial;
+}
+
+.div-effect-text h2 {
+    font-size: 16px;
+    color: #E5D7D4;
+    text-transform: none;
+    font-weight: bold;
+    margin: initial;
+}
+
+@keyframes profile-picture {
+    0% {opacity: 0;transform: translate(0px, 20px);}
+    100% {opacity: 1;transform: translate(0px, 0px);}
+}
+
+@keyframes title {
+    0% {opacity: 0;transform: translate(0px, -20px);}
+    100% {opacity: 1;transform: translate(0px, 0px);}
+}
+
+@keyframes navigation-bar {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes contents {
+    0% {opacity: 0;transform: translate(-20px, 0px);}
+    100% {opacity: 1;transform: translate(0px, 0px);}
+}
+
+@media (max-width: 1080px) {
+
+.navigation li {
+    display: none;
+}
+
+#nav-toggle {
+    display: inline-block;
+}
+
+.cover-page {
+    display: block;
+}
+
+.cover-page div {
+    height: auto;
+}
+
+.main-picture {
+    width: 100%;
+}
+
+.main-picture img {
+    margin-top: 20px; 
+    max-width: 55%;   
+}
+
+.main-title {
+    width: 100%;
+    text-align: center;
+}
+
+.main-title h1 {
+    margin-top: 40px;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;    
+}
+
+.main-title h2 {
+    margin-top: 12px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.main {
+    padding: 10px 5%;
+}
+
+.main p {
+    text-align: left;
+    line-height: 30px;
+}
+
+.shortcut {
+    font-size: 14px;
+}
+
+.work-picture {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.div-effect {
+    opacity: 0.80;
+}
+
+.menujs {
+    height: auto;
+}
+
+.menujs ul {
+    height: auto;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.menujs li {
+    display: block;
+    border-bottom: 1px solid #b48257;
+    padding: initial;
+    width: 100%;
+}
+
+}
